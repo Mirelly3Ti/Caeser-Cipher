@@ -6,11 +6,15 @@
     <title>Caesar Cipher</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <header class="header-container">
-        <img class="header-logo" src="{{ url_for('static', filename='images/logo.jpeg') }}">   
+      <img class="header-logo" src="{{ url_for('static', filename='images/logo.jpeg') }}">   
     </header>
     <main>
         {% block content%}
