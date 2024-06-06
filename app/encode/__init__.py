@@ -1,10 +1,10 @@
-def encode(message, shift):
-    alphabet = ['A', 'B', 'C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+def encode_message(message, shift):
+    alphabet = ['A', 'B', 'C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', ' ']
     partialStart = ''
     partialEnd = ''
     shiftedAlphabet = ''
     encodedMessage = ''
-
+ 
     if shift == 0:
         shiftedAlphabet = alphabet
     elif shift > 0 and shift < 26:
@@ -20,7 +20,7 @@ def encode(message, shift):
         return("shift_error")
     
     for letter in message:
-        letter_index = alphabet.index(letter)
+        letter_index = alphabet.index(letter.upper())
         encodedMessage = encodedMessage + shiftedAlphabet[letter_index]
 
     return(encodedMessage)

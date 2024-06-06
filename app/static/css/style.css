@@ -1,18 +1,25 @@
 :root {
-    --color-primary: #568602;
-    --color-prymary-hover: #386641;
-    --color-primary-dark: #243104;
-    
-    --color-text: #fefae0;
-    --color-background: #2e4711;
+    --color-primary: #890504;
+    --color-primary-hover: #FF0000;
+    --color-primary-dark: #990100;
+
+    --color-text: #FFF0F3;
+    --color-background: #220901;
 }
 
-body{
+body {
     background: var(--color-background);
-    color: var(--color-text); 
-    font-family: Josefin Sans;
+    color: var(--color-text);
+    font-family: Ubuntu;
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+.alert {
+    font-size: 1rem;
+    padding: 2px;
+    color: var(--color-text);
+    background-color: var(--color-primary-dark);
 }
 
 .info {
@@ -35,7 +42,7 @@ body{
     border-width: 2px;
     border-radius: 10px;
     border-style: solid;
-    border-color: var(color-text);
+    border-color: var(--color-text);
 }
 
 .cipher-image {
@@ -50,5 +57,5 @@ body{
 }
 
 .header-logo {
-    height: 250px;
+    height: 150px;
 }
